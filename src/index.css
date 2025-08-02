@@ -1,33 +1,14 @@
+@import 'tailwindcss';
+
+/* Animaciones personalizadas que no se pueden reemplazar fácilmente con Tailwind */
 @keyframes move {
   100% {
     transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 
-.background {
-  z-index: -1;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: #001247;
-  overflow: hidden;
-}
-
-.background span {
-  width: 20vmin;
-  height: 20vmin;
-  border-radius: 20vmin;
-  backface-visibility: hidden;
-  position: absolute;
-  animation: move;
-  animation-duration: 45;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.background span:nth-child(0) {
+/* Estilos específicos para las animaciones del background que requieren valores exactos */
+.background span:nth-child(1) {
   color: #2ba8de;
   top: 4%;
   left: 75%;
@@ -36,7 +17,7 @@
   transform-origin: -17vw -9vh;
   box-shadow: -40vmin 0 5.930149387545786vmin currentColor;
 }
-.background span:nth-child(1) {
+.background span:nth-child(2) {
   color: #fb0e55;
   top: 48%;
   left: 57%;
@@ -45,7 +26,7 @@
   transform-origin: -11vw 13vh;
   box-shadow: -40vmin 0 5.299932444810694vmin currentColor;
 }
-.background span:nth-child(2) {
+.background span:nth-child(3) {
   color: #2ba8de;
   top: 48%;
   left: 79%;
@@ -54,7 +35,7 @@
   transform-origin: 5vw -18vh;
   box-shadow: 40vmin 0 5.16966529008969vmin currentColor;
 }
-.background span:nth-child(3) {
+.background span:nth-child(4) {
   color: #2ba8de;
   top: 30%;
   left: 90%;
@@ -63,7 +44,7 @@
   transform-origin: 23vw 6vh;
   box-shadow: -40vmin 0 5.829395857781626vmin currentColor;
 }
-.background span:nth-child(4) {
+.background span:nth-child(5) {
   color: #ab129e;
   top: 36%;
   left: 9%;
@@ -72,7 +53,7 @@
   transform-origin: -24vw 1vh;
   box-shadow: -40vmin 0 5.753356847096578vmin currentColor;
 }
-.background span:nth-child(5) {
+.background span:nth-child(6) {
   color: #ab129e;
   top: 72%;
   left: 74%;
@@ -81,7 +62,7 @@
   transform-origin: -1vw 21vh;
   box-shadow: -40vmin 0 5.601396326111476vmin currentColor;
 }
-.background span:nth-child(6) {
+.background span:nth-child(7) {
   color: #2ba8de;
   top: 29%;
   left: 82%;
@@ -90,7 +71,7 @@
   transform-origin: -9vw -11vh;
   box-shadow: -40vmin 0 5.637972433280546vmin currentColor;
 }
-.background span:nth-child(7) {
+.background span:nth-child(8) {
   color: #fb0e55;
   top: 38%;
   left: 86%;
@@ -99,7 +80,7 @@
   transform-origin: -13vw 19vh;
   box-shadow: -40vmin 0 5.939110895770185vmin currentColor;
 }
-.background span:nth-child(8) {
+.background span:nth-child(9) {
   color: #fb0e55;
   top: 12%;
   left: 81%;
@@ -108,7 +89,7 @@
   transform-origin: 25vw -22vh;
   box-shadow: -40vmin 0 5.677535459039365vmin currentColor;
 }
-.background span:nth-child(9) {
+.background span:nth-child(10) {
   color: #fb0e55;
   top: 41%;
   left: 73%;
@@ -117,7 +98,7 @@
   transform-origin: 10vw 19vh;
   box-shadow: 40vmin 0 5.2209995145771vmin currentColor;
 }
-.background span:nth-child(10) {
+.background span:nth-child(11) {
   color: #2ba8de;
   top: 8%;
   left: 14%;
@@ -126,7 +107,7 @@
   transform-origin: -15vw 22vh;
   box-shadow: -40vmin 0 5.637364672382007vmin currentColor;
 }
-.background span:nth-child(11) {
+.background span:nth-child(12) {
   color: #fb0e55;
   top: 49%;
   left: 2%;
@@ -135,7 +116,7 @@
   transform-origin: -16vw -14vh;
   box-shadow: 40vmin 0 5.741758898180442vmin currentColor;
 }
-.background span:nth-child(12) {
+.background span:nth-child(13) {
   color: #ab129e;
   top: 30%;
   left: 81%;
@@ -144,7 +125,7 @@
   transform-origin: -21vw 6vh;
   box-shadow: -40vmin 0 5.622185594399674vmin currentColor;
 }
-.background span:nth-child(13) {
+.background span:nth-child(14) {
   color: #2ba8de;
   top: 68%;
   left: 43%;
@@ -153,7 +134,7 @@
   transform-origin: 6vw -23vh;
   box-shadow: -40vmin 0 5.169044699600704vmin currentColor;
 }
-.background span:nth-child(14) {
+.background span:nth-child(15) {
   color: #2ba8de;
   top: 44%;
   left: 78%;
@@ -162,7 +143,7 @@
   transform-origin: -1vw 19vh;
   box-shadow: 40vmin 0 5.828751264230152vmin currentColor;
 }
-.background span:nth-child(15) {
+.background span:nth-child(16) {
   color: #ab129e;
   top: 63%;
   left: 44%;
@@ -171,7 +152,7 @@
   transform-origin: -11vw -3vh;
   box-shadow: -40vmin 0 5.924152704675096vmin currentColor;
 }
-.background span:nth-child(16) {
+.background span:nth-child(17) {
   color: #2ba8de;
   top: 58%;
   left: 78%;
@@ -179,44 +160,4 @@
   animation-delay: -11s;
   transform-origin: -14vw 12vh;
   box-shadow: 40vmin 0 5.038911526561555vmin currentColor;
-}
-
-.form-search {
-  padding: 20px;
-  text-align: center;
-}
-
-.gif-title {
-  color: #ffffff;
-}
-
-.input-search {
-  border-style: solid;
-  padding: 5px;
-  font-size: 16px;
-  text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #ffffff;
-  border-radius: 24px;
-  box-shadow: 2px -1px 14px 0px rgba(42, 42, 42, 0.69);
-  border-width: 3px;
-  .css-input:focus {
-    outline: none;
-  }
-}
-
-.gifs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 45px;
-  width: 100%;
-  padding: 20px;
-}
-
-.gif-item {
-  width: 80%;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
 }
