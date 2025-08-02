@@ -3,7 +3,6 @@ import { Search } from './Search';
 import { GridGifs } from './GridGifs';
 import { BackgroundGradientAnimation } from '../src/Background';
 function App() {
-  //Estado
   const [valorInput, setValorInput] = useState('');
   const [gifs, setGifs] = useState([]);
 
