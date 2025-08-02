@@ -1,5 +1,7 @@
 # 🎬 GIF-App
 
+> **⚠️ This project is currently in development - Beta Version**
+
 A modern and interactive GIF search application built with React, Vite, and Tailwind CSS. Features a stunning animated gradient background and smooth GIF loading animations.
 
 ## ✨ Features
@@ -69,6 +71,7 @@ gif-app/
 ├── eslint.config.js            # ESLint configuration
 ├── index.html                  # HTML template
 ├── package.json                # Dependencies and scripts
+├── package-lock.json           # Locked dependency versions for consistent installs
 └── vite.config.js              # Vite configuration
 ```
 
@@ -179,6 +182,9 @@ The `dist` folder will contain the optimized build ready for deployment.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
