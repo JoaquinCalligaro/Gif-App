@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @plugin "@midudev/tailwind-animations";
+
 @theme inline {
   --animate-first: moveVertical 30s ease infinite;
   --animate-second: moveInCircle 20s reverse infinite;

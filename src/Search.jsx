@@ -3,7 +3,7 @@ export const Search = ({ onSubmit, valorInput, onChange }) => {
     <form className="p-5 text-center" onSubmit={onSubmit}>
       <h1 className="text-white text-3xl font-bold mb-4">Gif-App</h1>
       <input
-        className="border-solid border-3 border-gray-950 rounded-3xl p-2 text-base text-center bg-gray-800 text-white focus:outline-none shadow-lg"
+        className="border-solid border-3 border-gray-950 rounded-3xl px-3 py-0.5 text-base text-center bg-gray-300 text-black focus:outline-none shadow-lg "
         style={{ boxShadow: '2px -1px 14px 0px rgba(42, 42, 42, 0.69)' }}
         value={valorInput}
         onChange={onChange}
