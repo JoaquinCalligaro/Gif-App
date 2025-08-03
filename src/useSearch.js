@@ -5,7 +5,7 @@ export default function useSearchGifs() {
   const [valorInput, setValorInput] = useState('');
   const [gifs, setGifs] = useState([]);
   const [loader, setloader] = useState(false);
-  const [error, setError] = useState(true);
+  const [error, setError] = useState(false);
   const onChange = (evento) => {
     const valor = evento.target.value;
     setValorInput(valor);
