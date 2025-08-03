@@ -18,7 +18,7 @@ export default function useSearchGifs() {
     await new Promise((resolve) => {
       setTimeout(() => {
         resolve(true);
-      }, 3000);
+      }, 2000);
     });
     const response = await fetch(url);
     const data = await response.json();
