@@ -1,7 +1,7 @@
 import { Search } from './Search';
 import { GridGifs } from './GridGifs';
-import { BackgroundGradientAnimation } from '../src/Background';
-import useSearchGifs from './useSearch';
+import { BackgroundGradientAnimation } from './Background';
+import useSearchGifs from '../hooks/useSearch';
 import { LoaderComponent } from './Loader';
 import { ErrorMessage } from './ErrorMessage';
 

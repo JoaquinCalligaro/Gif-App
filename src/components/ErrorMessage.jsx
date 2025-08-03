@@ -1,10 +1,10 @@
 import WarningIcon from './WarningIcon';
 export const ErrorMessage = () => {
   return (
-    <div className="flex justify-center items-center mt-10 ">
+    <div className="flex justify-center items-center mt-15  ">
       <div
         id="alert-additional-content-2"
-        className="p-4 mb-4 text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
+        className="p-5   border  rounded-lg  bg-gray-800 text-red-400 border-red-800"
         role="alert">
         <div className="flex items-center">
           <WarningIcon className="w-6 h-6 mr-2" />
