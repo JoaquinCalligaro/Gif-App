@@ -164,6 +164,19 @@ const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}`;
 - **GIF Loading**: Staggered entrance animations (200ms delay between each GIF)
 - **Custom Keyframes**: Defined in `index.css` for background movements
 
+## 🔐 Security Practices
+This project follows best practices for handling sensitive data:
+
+✅ API keys are stored securely using .env files
+
+🛑 No API keys are exposed in the repository
+
+📁 .env is excluded via .gitignore and only .env.example is committed for guidance
+
+🧽 Git history was cleaned using git filter-repo to remove sensitive commits from the past
+
+💡 This ensures the Giphy API key is safe in both development and production environments (via Netlify environment variables)
+
 ## 🚀 Deployment
 
 To build for production:
