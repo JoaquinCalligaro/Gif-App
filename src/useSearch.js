@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function useSearchGifs() {
   const [valorInput, setValorInput] = useState('');
   const [gifs, setGifs] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [loader, setloader] = useState(false);
   const onChange = (evento) => {
     const valor = evento.target.value;
     setValorInput(valor);
@@ -14,15 +14,15 @@ export default function useSearchGifs() {
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${
       import.meta.env.VITE_GIPHY_API_KEY
     }&q=${query}`;
-    setIsLoading(true);
+    setloader(true);
     await new Promise((resolve) => {
       setTimeout(() => {
         resolve(true);
-      }, 3000);
+      }, 5000);
     });
     const response = await fetch(url);
     const data = await response.json();
-    setIsLoading(false);
+    setloader(false);
     return data.data;
   };
 
@@ -38,6 +38,6 @@ export default function useSearchGifs() {
     onChange,
     onSubmit,
     gifs,
-    isLoading,
+    loader,
   };
 }
