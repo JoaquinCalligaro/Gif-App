@@ -5,6 +5,7 @@ export default function useSearchGifs() {
   const [valorInput, setValorInput] = useState('');
   const [gifs, setGifs] = useState([]);
   const [loader, setloader] = useState(false);
+  const [error, setError] = useState(true);
   const onChange = (evento) => {
     const valor = evento.target.value;
     setValorInput(valor);
@@ -19,7 +20,7 @@ export default function useSearchGifs() {
       await new Promise((resolve) => {
         setTimeout(() => {
           resolve(true);
-        }, 2000);
+        }, 1500);
       });
 
       let response = await fetch(url);
@@ -31,17 +32,27 @@ export default function useSearchGifs() {
         response = await fetch(url);
       }
       const data = await response.json();
+
+      //Aqui verifica si el array de GIFs esta vacio
+
+      if (data.data.length === 0) {
+        setError(true); // Marca el error como verdadero
+        setloader(false);
+        return [];
+      }
       setloader(false);
       return data.data;
     } catch (error) {
       console.log('Error fetching GIFS:', error);
+      setError(true);
+      setloader(false);
+      return [];
     }
-    setloader(false);
-    return [];
   };
 
   const onSubmit = async (evento) => {
     evento.preventDefault();
+    setError(false);
     const gifs = await getFigs(valorInput);
     console.log(gifs);
     setGifs(gifs);
@@ -53,5 +64,6 @@ export default function useSearchGifs() {
     onSubmit,
     gifs,
     loader,
+    error,
   };
 }
