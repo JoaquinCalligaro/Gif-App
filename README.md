@@ -1,6 +1,6 @@
 # 🎬 GIF-App
 
-> **⚠️ This project is currently in development - Beta Version**
+> **⚠️ This project is currently in development - Stable Version**
 
 A modern and interactive GIF search application built with React, Vite, and Tailwind CSS. Features a stunning animated gradient background and smooth GIF loading animations.
 
@@ -24,26 +24,30 @@ A modern and interactive GIF search application built with React, Vite, and Tail
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd gif-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    # Copy the example environment file
    cp .env.example .env
-   
+
    # Edit .env and add your Giphy API key
    VITE_GIPHY_API_KEY=your_giphy_api_key_here
    ```
 
 4. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -94,39 +98,47 @@ gif-app/
 
 ```json
 {
-  "@midudev/tailwind-animations": "^0.2.0",    // Additional Tailwind animations
-  "@tailwindcss/vite": "^4.1.11",             // Tailwind CSS Vite integration
-  "clsx": "^2.1.1",                           // Conditional className utility
-  "motion": "^12.23.12",                      // Animation library
-  "react": "^19.1.0",                         // React library
-  "react-dom": "^19.1.0",                     // React DOM rendering
-  "tailwind-merge": "^3.3.1",                 // Merge Tailwind classes
-  "tailwindcss": "^4.1.11"                    // Tailwind CSS framework
+  "@midudev/tailwind-animations": "^0.2.0", // Additional Tailwind animations
+  "@tailwindcss/vite": "^4.1.11", // Tailwind CSS Vite integration
+  "clsx": "^2.1.1", // Conditional className utility
+  "motion": "^12.23.12", // Animation library
+  "react": "^19.1.0", // React library
+  "react-dom": "^19.1.0", // React DOM rendering
+  "tailwind-merge": "^3.3.1", // Merge Tailwind classes
+  "tailwindcss": "^4.1.11" // Tailwind CSS framework
 }
 ```
 
 ## 🎨 Key Components
 
 ### App.jsx
+
 The main component that manages:
+
 - Application state (search input and GIFs array)
 - API calls to Giphy
 - Form submission handling
 
 ### Background.jsx
+
 Creates an interactive animated gradient background with:
+
 - Multiple animated gradient orbs
 - Mouse tracking for interactive effects
 - Customizable colors and animation properties
 
 ### Search.jsx
+
 Simple search form component featuring:
+
 - Controlled input with custom styling
 - Form submission handling
 - Responsive design
 
 ### GridGifs.jsx & Gif.jsx
+
 Display components that handle:
+
 - Grid layout for GIF results
 - Individual GIF rendering with staggered animations
 - Responsive image sizing
@@ -165,6 +177,7 @@ const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}`;
 - **Custom Keyframes**: Defined in `index.css` for background movements
 
 ## 🔐 Security Practices
+
 This project follows best practices for handling sensitive data:
 
 ✅ API keys are stored securely using .env files
